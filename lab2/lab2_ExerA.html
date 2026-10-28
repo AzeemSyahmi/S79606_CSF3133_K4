@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Faculty Event Page</title>
+</head>
+
+<body>
+
+<!-- =========Header Section=========== -->
+<header> 
+   <h1>WebCraft Programming WorkShop 2026</h1>
+   <p>"Design Your Ideas. Code Your Future."</p>
+</header>
+
+<!-- =========Navigation Section=========== -->
+<nav>
+   <a href="#schedule">Schedule</a>  | <a href="#register">Register</a>  | <a href="#about">About</a>
+</nav>
+
+<!--Horizontal Line Divider-->
+<hr>
+
+<!-- =========About Section=========== -->
+<section id="about">
+   <h2>1. About the Event</h2>
+   <article>
+	<h3>Prof. Madya Dr. Wan Nural Jawahir</h3>
+	<p>Dr.Wan Nural is a Principal Software Architect speacializing in scalable web frameworks and modern software engineeing paradigms.</p>
+   </article>
+
+   <article>
+	<h3>The Future of AI in Development</h3>
+	<p> A hands-on workshop designed to introduce students to the fundamentals of web design and programming. Participants will learn how to build their own websites using HTML and CSS, explore creative web layouts and develop 		practical coding skills through interactive activities </p>
+   </article>
+</section>
+<br>
+
+<!--Horizontal Line Divider-->
+<hr>
+
+<!-- =========Schedule Section=========== -->
+<section id="schedule">
+   <h2>2. Event Schedule</h2>
+
+   <!-- Create a table for schedule with 4 columns -->
+   <table border="1">
+	<tr>
+	  <th style="width:20%">Time</th>
+	  <th style="width:35%">Activity</th>
+	  <th style="width:25%">Venue</th>
+	  <th style="width:30%">Person in Charge</th>
+	</tr>
+
+	<tr>
+	  <td>8:30 - 9:00 AM</td>
+	  <td>Participant Registration</td>
+	  <td>Main Lobby</td>
+	  <td>Registration Committee</td>
+	</tr>
+
+	<tr>
+	  <td>9:00 - 9:30 AM</td>
+	  <td>Opening Ceremony</td>
+	  <td>Main Hall</td>
+	  <td>Event Director</td>
+	</tr>
+
+	<tr>
+	  <td>9:30 - 10:00 AM</td>
+	  <td>Introduction to HTML</td>
+	  <td>Computer Lab 1</td>
+	  <td>HTML Instructor</td>
+	</tr>
+
+	<tr>
+	  <td>10:30 - 10:45 AM</td>
+	  <td colspan="3" align="center">Morning Break</td>
+	</tr>
+
+	<tr>
+	  <td>10:45 - 12:00 PM</td>
+	  <td>CSS & Web Design Fundamentals</td>
+	  <td>Computer Lab 1</td>
+	  <td>CSS Instructor</td>
+	</tr>
+
+	<tr>
+	  <td>12:00 - 1:00 PM</td>
+	  <td colspan="3" align="center">Lunch Break</td>
+	</tr>
+
+	<tr>
+	  <td>1:00 - 2:15 PM</td>
+	  <td>Hands-on Website Development</td>
+	  <td>Computer Lab 1</td>
+	  <td>Technical Committee</td>
+	</tr>
+
+	<tr>
+	  <td>3:15 - 3:45 PM</td>
+	  <td>Website and Showcase Evaluation</td>
+	  <td rowspan="2">Main Hall</td>
+	  <td>Evaluation Committee</td>
+	</tr>
+
+	<tr>
+	  <td>3:45 - 4:30 PM</td>
+	  <td>Closing Ceremony</td>
+	  <td>Event Director</td>
+	</tr>
+   </table>
+</section>
+<br>
+<hr>
+
+<!-- =========Register Section=========== -->
+<section id="register">
+   <h2>3. Registration</h2>
+
+   <!-- Create a form for register -->
+   <form action="register.html" method="post">
+
+   <label for="name">Full Name : </label><br>
+   <input type="text" id="name" name="name" placeholder="Enter your full name"><br>
+<br>
+
+   <label for="email">Email Address : </label><br>
+   <input type="email" id="email" name="email" placeholder="example@email.com"><br>
+<br>
+
+   <label for="matric">Matric Number : </label><br>
+   <input type="text" id="matric" name="matric" placeholder="Enter your matric number"><br>
+<br>
+
+   <!--Using a radio button to choose year of study-->
+   <label>Year of Study : </label><br>
+   <input type="radio" id="year1" name="yearStudy" value="Year 1">
+   <label for="year1">Year 1</label><br>
+   <input type="radio" id="year2" name="yearStudy" value="Year 2">
+   <label for="year2">Year 2</label><br>
+   <input type="radio" id="year3" name="yearStudy" value="Year 3">
+   <label for="year3">Year 3</label><br>
+   <input type="radio" id="year4" name="yearStudy" value="Year 4">
+   <label for="year4">Year 4</label><br>
+<br>
+
+   <!-- Using a checkbox to choose sessions -->
+   <label>Sessions you want to join : </label><br>
+   <input type="checkbox" id="session1" name="session" value="Introduction">
+   <label for="session1">Introduction to HTML</label><br>
+   <input type="checkbox" id="session2" name="session" value="CSS">
+   <label for="session2">CSS & Web Design Fundamentals</label><br>
+   <input type="checkbox" id="session3" name="session" value="Hands-on">
+   <label for="session3">Hands-on Website Development</label><br>
+   <input type="checkbox" id="session4" name="session" value="Website">
+   <label for="session4">Website and Showcase Evaluation</label><br>
+<br>
+
+   <!-- Using a select to programme/course -->
+   <label for="faculty">Programme/Course : </label><br>
+   <select id="faculty" name="faculty">
+	<option value="se">Software Engineering</option>
+	<option value="im">Informatic Maritime</option>
+	<option value="mc">Mobile Computing</option>
+	<option value="ad">Analytic Data</option>
+	<option value="other">Others</option>
+   </select>
+<br><br>
+
+<!-- Submit button -->
+<input type="submit" value="Submit">
+</form>
+</section>
+<!-- Footer Section -->
+<footer>
+   <p>&copy; 2026 Faculty of Computer Science and Mathematics</p>
+</footer>
+</body>
+</html>
