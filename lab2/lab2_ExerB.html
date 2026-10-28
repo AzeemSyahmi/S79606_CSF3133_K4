@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course Feedback</title>
+</head>
+<body>
+<header>
+<h1>CSF3133 Course Feedback</h1>
+<!-- Error 1 (Line 10): Wrong word </header> --!>
+</header>
+<nav>
+<a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+</nav>
+
+<section id="results">
+<h2>Feedback Summary</h2>
+<table border="1">
+<tr>
+<th>Week</th>
+<th>Topic</th>
+<!-- Error 2 (Line 20): Wrong uses <td> in header row to </th> --!>
+<th>Rating</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Introduction to HTML</td>
+<td>4.5</td>
+<!-- Error 3 (Line 26): Missing </tr> --!>
+</tr>
+<tr>
+<td>2</td>
+<!-- Error 4 (Line 28): incorrect number of columns --!>
+<td colspan="2">Tables and Forms</td>
+</tr>
+<tr>
+<td>3</td>
+<!-- Error 5 (Line 32): Missing </td> --!>
+<!-- Error 6 (Line 32): Missing <td> --!>
+<td>Semantic HTML</td>
+<td>4.0</td>
+</tr>
+</table>
+</section>
+<section id="form">
+<h2>Give Your Feedback</h2>
+<form action="submit_feedback.php" method="post">
+<label for="name">Name:</label>
+<!-- Error 7 (Line 40): Wrong id="fullname"  --!>
+<input type="text" id="fullname" name="fullname"><br>
+<label>Overall rating:</label><br>
+<input type="radio" id="good" name="good" value="good">
+<label for="good">Good</label>
+<input type="radio" id="poor" name="poor" value="poor">
+<label for="poor">Poor</label><br>
+<input type="checkbox" id="lab" name="lab" value="yes">
+<!-- Error 8 (Line 47): Wrong using label "labs" --!>
+<label for="lab">I attended all labs</label><br>
+<input type="submit" value="Submit">
+<!-- Error 9 (Line 49): Missing spelling "from" --!>
+</form>
+</section>
+<footer>
+<!-- Error 10 (Line 52): Missing ";" --!>
+<p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
