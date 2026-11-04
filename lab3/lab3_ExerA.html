@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bakery Online Order</title>
+</head>
+<body>
+
+<!-- Header Section-->
+<div id="header">
+    <h1>Laut & Loaf&reg;
+        <span>Baked with Love, Inspired by the Sea!</span></h1>
+</div>
+
+<!-- Navigation Section-->
+<div id="nav">
+    <a href="#home">Home |</a>
+    <a href="#menu">Our Menu | </a>
+    <a href="#order">Order Now</a>
+</div>
+
+<!-- Main Content Section-->
+<div id="content">
+    <h2 id="home">Welcome to Laut & Loaf Bakery!</h2>
+    <p> 
+        A little taste of the coast, right here at UMT!<br>
+        We bring you <strong> freshly baked treats </strong>, made with <em>love and passion</em>, 
+        inspired by the beautiful coastline of Terengganu.<br>
+    </p>
+
+    <p>
+        From our delicious cupcakes to delightful cake slices, every bite brings you a little moment of 
+            <span>happiness and sweetness.</span>
+    </p>
+
+    <p> Looking for something delicious? <br>
+    <a href="#menu">Explore our menu</a> 
+    and discover your favourite treats! 
+    </p>
+<hr>
+    <!-- Menu/Product Section-->
+    <h2 id="menu">Our Products</h2>
+    <ul>
+        <li>Cupcakes - RM3.00</li>
+        <li>Cake Slices - RM5.00</li>
+        <li>Butter Croissant - RM6.00</li>
+        <li>Iced Caramel Latte -RM6.50</li>
+        <li>Iced Chocolate - RM5.00</li>
+        <li>Matcha Strawberry - RM8.00</li>
+    </ul>
+
+<hr>
+
+<!-- Order Form Section-->
+<div id="order">
+    <h2> Online Order Form</h2>
+    <form oninput ="total.value= (Number(cupcakes.value)* 3 + Number(slices.value)*5).toFixed(2)">
+        <!-- Customer Name -->
+        <label for="customer">Customer Name* :</label>
+            <input type="text" id="customer" name="customer" placeholder="Enter your name" required autofocus> <br> <br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number* :</label>
+            <input type="tel" id="phone" name="phone" required > <br><br>
+        
+        <!-- Email -->
+        <label for="email">E-mail* :</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+        <!-- Pick-up date -->
+        <label for="date">Pick-up Date :</label>
+            <input type="date" id="date" name="date"> <br><br>
+
+        <!-- Pick-up time -->
+        <label for="time">Pick-up Time :</label>
+            <input type="time" id="time" name="time"> <br><br>
+
+        <!-- Flavour with datalists -->
+        <label for="flavour">Flavour:</label>
+            <input type="text" id="flavour" name="flavour" list="flavours">
+
+        <datalist id="flavours">
+            <option value="Chocolate"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+            <option value="Pistachio"></option>
+            <option value="Red Velvet"></option>
+        </datalist> <br><br>
+
+        <!-- Icing colour -->
+        <label for="icing">Icing Colour :</label>
+            <input type="color" id="icing" name="icing"> <br><br>
+        <!-- Sweetness level -->
+        <label for="sweetness">Sweetness Level :</label>
+            <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1"> <br><br>
+        <!-- Quantity order -->
+        <label for="cupcakes">Cupcakes(RM3.00 each):</label>
+            <input type="number" id="cupcakes" min="0" value="0"> <br><br>
+        <label for="slices">Cake Slices(RM5.00 each):</label>
+            <input type="number" id="slices" min="0" value="0"> <br><br>
+
+        <!-- Total price -->
+        <strong>Total Price: RM</strong>
+        <output name="total" for="cupcakes slices">0.00</output> <br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit Order">
+    </form>
+</div>
+<!-- Sidebar Section -->
+<div id="sidebar">
+    <h2>Price List</h2>
+    <ul>
+        <li>Cupcakes - RM3.00</li>
+        <li>Cake Slices - RM5.00</li>
+        <li>Butter Croissant - RM6.00</li>
+        <li>Iced Caramel Latte -RM6.50</li>
+        <li>Iced Chocolate - RM5.00</li>
+        <li>Matcha Strawberry - RM8.00</li>
+    </ul>
+    <p> Orders &gt; 10 pieces get a free drink!</p>
+</div>
+</div>
+<br>
+
+<!-- Footer Section -->
+<div id="footer">
+    <p> &copy; 2026 Laut & Loaf&reg; All rights are reserved</p>
+    <p>Thank you for choosing Laut & Loaf !</p>
+</div>
+</body>
+</html>
+
+<!-- Testing :
+1. When clicking Submit with all fields empty, the browser display validation message because the required attributes are used
+2. The browser reject the input because it is not a valid email format 
+-->
+
+
