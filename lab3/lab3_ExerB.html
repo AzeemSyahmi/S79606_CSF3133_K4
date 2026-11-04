@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+ <!--Error Identification-->
+    <!--ERROR 1 (Line 1) : Incomplete DOCTYPE declaration, missing "html"-->
+    <!--ERROR 2 (Line 9) : Incorrect nesting of <h1> and <span> -->
+    <!--ERROR 3 (Line 11) : Wrongly used <span> for main section -->
+    <!--ERROR 4 (Line 13) : Incorrect nesting of HTML entities -->
+    <!--ERROR 5 (Line 14) : Incorrect calculation values -->
+    <!--ERROR 6 (Line 18) : Typo word "email" and missing required -->
+    <!--ERROR 7 (Line 23) : Datalist does not match the input list -->
+    <!--ERROR 8 (Line 28, 30) : Missing minimum value and default value-->
+    <!--ERROR 9 (Line 32) : Incorrect starting minimum and maximum values -->
+    <!--ERROR 10 (Line 33) : Incorrect output "for" attributes -->
+    <!--ERROR 11 (Line 36) : Incorrect using <span> -->
+    <!--ERROR 12 (Line 38) : Incorrect copyright entity -->
+
+<!--Header Section-->
+<div id="header">
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+</div>
+
+<!--Main Content Section-->
+<div id="content">
+    <h2>Book Your Ticket</h2>
+    <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+<!--Booking form and Calculation Section-->
+<form action="booking.php" oninput="total.value = Number(adult.value) + Number(child.value);
+    price.value=(Number(adult.value)*12 + Number(child.value)*8).toFixed(2);">
+    <!--Customer Name-->
+    <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+    <!--Email-->
+    <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+    <!--Phone number-->
+    <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+    <!--Date and Time-->
+    <label for="date">Show date:</label>
+        <input type="date" id="date" name="date"><br>
+    <label for="time">Show time:</label>
+        <input type="time" id="time" name="time"><br>
+    <!--List Movie-->
+    <label for="movie">Movie:</label>
+        <input id="movie" name="movie" list="movies"><br>
+<datalist id="movies">
+    <option value="Space Rangers">
+    <option value="Kampung Comedy">
+    <option value="The Adventure">
+</datalist>
+
+<!-- Quantity Tickets-->
+    <label for="adult">Adult tickets:</label>
+        <input type="number" id="adult" name="adult" min="0" value="0"><br>
+    <label for="child">Child tickets:</label>
+        <input type="number" id="child" name="child" min="0" value="0"><br>
+    <!--Rating-->
+    <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5"><br>
+    
+    <strong>Total Tickets :</strong>
+    <output name="total" for="adult child">0</output>
+    <!--Total price -->
+    <strong>Total price: RM</strong>
+    <output name="price" for="adult child">0.00</output><br><br>
+<!--Submit button-->
+<input type="submit" value="Book Now">
+</form>
+</div>
+
+<!--Sidebar Section-->
+<div id="sidebar">
+    <h2> Now Showing</h2>
+    <ul>
+        <li><strong>Space Rangers</strong>
+            <span>(PG)</span>
+            <a href="https://youtu.be/WKlYJ03r9f0?si=Syz4va5IA-5OnH-9">Watch Trailer </a></li>
+        <li><strong>Kampung Comedy</strong>
+            <span>(P13)</span>
+            <a href="https://share.google/xmPhooPo12Si3ZUnx">Watch Trailer </a></li>
+        <li><strong>The Adventure</strong>
+            <span>(U)</span>
+            <a href="https://www.imdb.com/video/vi1369949721/">Watch Trailer </a></li>
+    </ul>
+</div>
+
+<!--Footer Section-->
+<div id="footer">
+<p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday </p>
+<p>&copy; 2026 CineKampus. All rights reserved.</p>
+</div>
+
+</body>
+</html>
