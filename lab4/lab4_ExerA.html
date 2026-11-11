@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visit Terengganu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #seats-note{
+            font-weight: bold;
+            color: #b03a2e;
+        }
+        footer p{
+            margin: 4px 0;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- HEADER Section-->
+         <header>
+            <h1>Visit Terengganu</h1>
+            <p class="center">Sun, sea and culture on Malaysia's east coast</p>
+         </header>
+
+        <nav>
+            <ul>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#trip">Join a trip</a></li>
+            </ul>
+        </nav>
+
+        <!--Destinations-->
+        <section id="destinations">
+            <h2>Top Destinations</h2>
+
+            <article class="card">
+                <h3>Redang Island</h3>
+                <p>Crystal clear water, coral reefs and white sandy beaches. Perfect for snorkelling.</p>
+                <p>Promotion: <span class="old-price">RM299</span><span class="price">RM199</span></p>
+            </article>
+
+            <article class="card">
+                <h3>Kuala Terengganu</h3>
+                <p>Explore Pasar Payang, Chinatown and the Crystal Mosque and taste local keropok lekor.</p>
+                <p>Promotion: <span class="old-price">RM120</span><span class="price">RM89</span></p>
+            </article>
+
+            <article class="card">
+                <h3>Setiu Wetlands</h3>
+                <p>A peaceful lagoon trip with mangrove boat rides, birdwatching and fresh seafood.</p>
+                <p>Promotion: <span class="old-price">RM150</span><span class="price">RM100</span></p>
+            </article>
+        </section>
+
+        <!--Video-->
+        <section id="video">
+            <h2>Watch and Be Inspired</h2>
+                 <figure>
+                     <video width="480" height="270" controls>
+                         <source src="terengganu.mp4" type="video/mp4">
+                             Your browser does not support the video tag.
+                    </video>
+                 <figcaption class="caption">Discover the beauty of Terengganu in one minute.</figcaption>
+                </figure>
+        </section>
+
+        <!--Trip Section-->
+        <section id="trip">
+            <h2>Join Our Student Trip</h2>
+            <p id="seats-note">
+                <label for="seats">Seats filled:</label>
+                <!-- Shows how many of the 40 seats are taken -->
+                <meter id="seats" min="0" max="40" value="28">28 of 40</meter> 28 / 40
+            </p>
+            
+            <form class="trip-form" action="#" method="post">
+                <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+                </p>
+            
+                <fieldset>
+                <legend>Traveller type</legend>
+                <label><input type="radio" name="traveller" value="student" checked> Student</label>
+                <label><input type="radio" name="traveller" value="staff"> Staff</label>
+                <label><input type="radio" name="traveller" value="public"> Public</label>
+                </fieldset>
+            
+                <fieldset>
+                <legend>Interests</legend>
+                <label><input type="checkbox" name="interest" value="islands"> Islands</label>
+                <label><input type="checkbox" name="interest" value="food"> Food</label>
+                <label><input type="checkbox" name="interest" value="culture"> Culture</label>
+                <label><input type="checkbox" name="interest" value="nature"> Nature</label>
+                </fieldset>
+            
+                <p><button type="submit">Submit</button></p>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Terengganu Tourism Office</p>
+            <address>
+                 Contact: <a href="mailto:info@visitterengganu.example">info@visitterengganu.example</a>
+            </address>
+        </footer>
+    </body>
+</html>
