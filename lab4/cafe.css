@@ -1,0 +1,87 @@
+/* ===== Navigation bar styles ===== */
+ul {
+  list-style-type: none;   
+  margin: 0;
+  padding: 0;
+  background-color: #6e2c00;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+}
+nav a {
+  display: block;               
+  padding: 14px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* Nav link states, correct order */
+nav a:link    { color: #ffffff; }
+nav a:visited { color: #fdebd0; }
+nav a:hover   { background-color: #e67e22; color: #222222; }  
+nav a:active  { background-color: #c0392b; color: #ffffff; }
+
+/* ===== Page layout ===== */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+}
+header, section, footer {
+  padding: 0 5%;
+}
+
+/* ===== Menu promotion ===== */
+.old-price {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+/* ===== Responsive video ===== */
+video {
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-style: italic;
+  color: #555555;
+}
+
+/* ===== Feedback form ===== */
+.feedback-form {
+  background-color: #fef5e7;
+  border: 2px solid #6e2c00;
+  border-radius: 8px;
+  padding: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+.feedback-form label {
+  margin-right: 10px;
+}
+.feedback-form button {
+  background-color: #6e2c00;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #6e2c00;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+footer p { color: #ffffff; text-align: center; }
+footer a:link, footer a:visited { color: #ffffff; }
+footer a:hover { color: #e67e22; }
+footer a:active { color: #c0392b; }
+address { font-style: normal; }
+
+/* ===== Small screens ===== */
+@media (max-width: 600px) {
+  li { display: block; }
+}
