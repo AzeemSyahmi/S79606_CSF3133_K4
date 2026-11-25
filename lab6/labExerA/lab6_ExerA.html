@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock, Paper, Scissors</title>
+  <!-- Link the external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Rock, Paper, Scissors</h1>
+    <p>Enter your name, click Start Game, then choose Rock, Paper or Scissors.</p>
+  </header>
+
+  <!-- PLAYER SECTION -->
+  <section id="playerSection">
+    <label for="playerName">Your name:</label>
+    <input type="text" id="playerName">
+    <button onclick="startGame()">Start Game</button>
+    <p id="welcome"></p>
+  </section>
+
+  <!-- GAME SECTION -->
+  <section id="gameSection">
+    <button onclick="playRound('rock')">Rock</button>
+    <button onclick="playRound('paper')">Paper</button>
+    <button onclick="playRound('scissors')">Scissors</button>
+
+    <div class="arena">
+      <div><h3>You</h3><img id="playerImg" src="rock.png" alt="Player choice"></div>
+      <span class="vs">VS</span>
+      <div><h3>Computer</h3><img id="computerImg" src="rock.png" alt="Computer choice"></div>
+    </div>
+  </section>
+
+  <!-- RESULT SECTION -->
+  <section id="resultSection">
+    <p id="result"></p>
+    <p>Wins: <span id="wins">0</span> &nbsp;
+       Losses: <span id="losses">0</span> &nbsp;
+       Draws: <span id="draws">0</span></p>
+  </section>
+
+  <!-- HISTORY SECTION -->
+  <section id="historySection">
+    <h2>History</h2>
+    <table id="history">
+      <tr><th>Round</th><th>You</th><th>Computer</th><th>Result</th></tr>
+    </table>
+    <button onclick="showSummary()">Show Summary</button>
+    <button onclick="resetGame()">Reset</button>
+    <p id="summary"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p id="startTime"></p>
+    <p>&copy; 2026 Computer Science Club</p>
+  </footer>
+
+  <!-- Link the external JavaScript file just before </body> -->
+  <script src="game.js"></script>
+</body>
+</html>
