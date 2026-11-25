@@ -1,0 +1,21 @@
+/* ===== Page ===== */
+body { font-family: Arial, sans-serif; background: #eef2f6; margin: 20px; color: #222; }
+h2 { color: #1f4e79; }
+
+/* ===== Form card ===== */
+form { background: white; padding: 15px; width: 300px; border: 1px solid #ddd; border-radius: 6px; }
+input { width: 95%; padding: 5px; margin: 4px 0 10px 0; }
+
+/* ===== Buttons with hover effect ===== */
+button { padding: 8px 14px; margin: 4px 4px 4px 0; background: #2b7bba; color: white;
+         border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #1f4e79; }
+
+/* ===== Result text ===== */
+#result { font-weight: bold; margin-bottom: 0; }
+#checkedOn { font-weight: bold; color: #2a7d2a; margin-top: 2px; }
+
+/* ===== Grade table: borders, padding, header background ===== */
+table { border-collapse: collapse; margin-top: 10px; background: white; }
+th, td { border: 1px solid #ccc; padding: 8px 24px; text-align: center; }
+th { background: #1f4e79; color: white; }
